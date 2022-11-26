@@ -1,0 +1,37 @@
+[
+  {
+    "text": "Sản phẩm giá từ 100 tới 500",
+    "entities": [
+      {
+        "start": 16,
+        "end": 19,
+        "value": "100",
+        "entity": "price_min"
+      },
+      {
+        "start": 24,
+        "end": 27,
+        "value": "500",
+        "entity": "price_max"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "price_max",
+        "start": 16,
+        "end": 19,
+        "confidence_entity": 0.5590713024139404,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "price_max",
+        "start": 24,
+        "end": 27,
+        "confidence_entity": 0.8495377898216248,
+        "value": "500",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

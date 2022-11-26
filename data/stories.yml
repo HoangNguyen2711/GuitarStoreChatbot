@@ -1,0 +1,130 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: bot_challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: help
+  steps:
+  - intent: help
+  - action: utter_help
+
+- story: address
+  steps:
+  - intent: shop_address
+  - action: utter_shop_address
+
+- story: email
+  steps:
+  - intent: shop_mail
+  - action: utter_shop_mail
+
+- story: register
+  steps:
+  - intent: register_account
+  - action: utter_register_account
+
+- story: payment
+  steps:
+  - intent: payment_methods
+  - action: utter_payment_methods
+
+- story: shipping
+  steps:
+  - intent: ship_fee
+  - action: utter_ship_fee
+
+- story: thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- story: price
+  steps:
+  - intent: product_price
+  - action: utter_product_price
+
+- story: return
+  steps:
+  - intent: return
+  - action: utter_return
+
+- story: weather
+  steps:
+  - intent: weather
+  - action: action_weather
+
+- story: news
+  steps:
+  - intent: news
+  - action: action_news
+
+- story: promotion
+  steps:
+  - intent: promotion
+  - action: action_coupon
+
+- story: product_detail
+  steps:
+  - intent: product_detail
+  - action: action_product_name
+
+- story: category
+  steps:
+  - intent: product_category
+  - action: action_category
+    
+- story: material
+  steps:
+  - intent: material
+  - action: utter_material
+
+- story: shopfor
+  steps:
+  - intent: shopfor
+  - action: utter_shopfor
+
+- story: cancel
+  steps:
+  - intent: cancel
+  - action: utter_cancel
+
+- story: sortprice
+  steps:
+  - intent: sortprice
+  - action: action_sort_price

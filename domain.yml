@@ -1,0 +1,170 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - help
+  - shop_address
+  - shop_mail
+  - register_account
+  - payment_methods
+  - ship_fee
+  - product_category
+  - promotion
+  - thanks
+  - product_price
+  - return
+  - weather
+  - news
+  - product_detail
+  - material
+  - shopfor
+  - cancel
+  - sortprice
+
+entities:
+  - product_name
+  - price_min
+  - price_max
+
+slots:
+  product_detail:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: product_name
+
+  price_min:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: price_min
+
+  price_max:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: price_max
+
+
+
+responses:
+  utter_greet:
+  - text: "Xin chào bạn, đây là Guitarstore!"
+  - text: "Hi, Mình có thể giúp gì cho bạn?"
+  - text: "Rất sẵn lòng để phục vụ bạn!"
+  - text: "Chào mừng bạn đến với GuitarStore"
+
+  utter_cheer_up:
+  - text: "Có cái này cho bạn nà:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "Tiếc thật, mình có thể giúp gì cho bạn?"
+
+  utter_did_that_help:
+  - text: "Nó có ích cho bạn không?"
+  - text: "Có phải thứ bạn đang tìm kiếm hong?"
+
+  utter_happy:
+  - text: "Hehe!"
+  - text: "Wonderful!"
+
+  utter_goodbye:
+  - text: "Tạm biệt ạ!"
+  - text: "Goodbye!"
+
+  utter_iamabot:
+  - text: "Tui là con rô bot."
+
+  utter_help:
+  - text: "Có mình giúp bạn đây."
+  - text: "Mình có thể hỗ trợ gì cho bạn ạ?"
+  - text: "Mình sẵn sàng hỗ trợ ạ."
+  - text: "Vâng, bạn cần gì ạ?"
+
+  utter_shop_address:
+  - text: "Shop chúng mình ở Vĩnh Long"
+  - text: "Shop mình ở Vĩnh Long đó"
+  - text: "Chúng mình ở Vĩnh Long"
+
+  utter_shop_mail:
+  - text: "Vâng đó là ourshop@gmail.com"
+  - text: "O U R S H O P @ G M A I L . C O M"
+
+  utter_register_account:
+  - text: "Link đây ạ, http://127.0.0.1:8000/register"
+  - text: "Bạn vào web shop mình sẽ thấy ạ, đây là link http://127.0.0.1:8000/register"
+
+  utter_payment_methods:
+  - text: "Shop mình chỉ hỗ trợ trả tiền khi nhận hàng ạ"
+  - text: "Bây giờ shop mình chỉ có trả tiền khi nhận hàng thôi ạ"
+
+  utter_ship_fee:
+  - text: "Phí ship của tụi mình cố định là $5 ạ."
+  - text: "$5 áp dụng cho tất cả ạ"
+
+  utter_thanks:
+  - text: "Hehe có gì đâu."
+  - text: "Mình rất vui ạ"
+  - text: "Mình rất vui vì đã giúp được bạn."
+
+  utter_product_price:
+  - text: "Bạn có thể xem giá ở trang chi tiết sản phẩm ạ"
+
+  utter_return:
+  - text: "Đây là quy định của tụi mình về chính sách đổi trả ạ: http://127.0.0.1:8000/policy"
+
+  utter_material:
+  - text: "Bạn có thể xem thông tin sản phẩm dưới phần mô tả trên trang chi tiết sản phẩm ạ"
+  - text: "Dưới phần mô tả của trang chi tiết sản phẩm có đề cập đó ạ"
+
+  utter_please_rephrase:
+  - text: "Xin lỗi! mình hỏng hiểu bạn nói gì ạ, bạn có thể lặp lại không ạ"
+
+  utter_shopfor:
+  - text: "Dạ shop mình kinh doanh đàn guitar ạ"
+  - text: "Dạ shop mình bán đàn guitar của đại đội ta"
+
+  utter_cancel:
+  - text: "Dạ chỉ khi đơn hàng ở trạng thái 'Pending' thì mình có thể hủy ạ"
+  - text: "Khi ở trạng thái 'Pending' thì mới hủy được ạ"
+
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_help
+  - utter_shop_address
+  - utter_shop_mail
+  - utter_register_account
+  - utter_payment_methods
+  - utter_ship_fee
+  - utter_thanks
+  - utter_product_price
+  - utter_return
+  - utter_material
+  - utter_please_rephrase
+  - utter_shopfor
+  - utter_cancel
+  - action_hello
+  - action_weather
+  - action_news
+  - action_coupon
+  - action_product_name
+  - action_category
+  - action_sort_price
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
