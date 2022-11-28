@@ -1,0 +1,120 @@
+[
+  {
+    "text": "100 tới 500 thì có sản phẩm nào ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "100",
+        "entity": "price_min"
+      },
+      {
+        "start": 8,
+        "end": 11,
+        "value": "500",
+        "entity": "price_max"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "price_max",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.6003048419952393,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "price_max",
+        "start": 8,
+        "end": 11,
+        "confidence_entity": 0.5267027616500854,
+        "value": "500",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "từ 100 tới 500",
+    "entities": [
+      {
+        "start": 3,
+        "end": 6,
+        "value": "100",
+        "entity": "price_min"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "500",
+        "entity": "price_max"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "price_max",
+        "start": 3,
+        "end": 6,
+        "confidence_entity": 0.551884114742279,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "price_max",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.6926504373550415,
+        "value": "500",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Legator guitar?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Legator",
+        "entity": "product_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Đàn Super có không vậy?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 9,
+        "value": "Super",
+        "entity": "product_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Shop có Super không?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 13,
+        "value": "Super",
+        "entity": "product_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Alvarez guitar?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Alvarez",
+        "entity": "product_name"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

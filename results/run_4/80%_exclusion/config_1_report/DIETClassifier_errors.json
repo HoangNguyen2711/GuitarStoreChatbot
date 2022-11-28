@@ -1,0 +1,119 @@
+[
+  {
+    "text": "từ 100 tới 500",
+    "entities": [
+      {
+        "start": 3,
+        "end": 6,
+        "value": "100",
+        "entity": "price_min"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "500",
+        "entity": "price_max"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "price_min",
+        "start": 3,
+        "end": 6,
+        "confidence_entity": 0.5422652363777161,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "price_min",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.5467363595962524,
+        "value": "500",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho mình xin danh sách sản phẩm từ 100 tới 500",
+    "entities": [
+      {
+        "start": 35,
+        "end": 38,
+        "value": "100",
+        "entity": "price_min"
+      },
+      {
+        "start": 43,
+        "end": 46,
+        "value": "500",
+        "entity": "price_max"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "price_max",
+        "start": 35,
+        "end": 38,
+        "confidence_entity": 0.5586341023445129,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "price_max",
+        "start": 43,
+        "end": 46,
+        "confidence_entity": 0.5451112389564514,
+        "value": "500",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "từ 100 tới 500 thì có sản phẩm nào",
+    "entities": [
+      {
+        "start": 3,
+        "end": 6,
+        "value": "100",
+        "entity": "price_min"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "500",
+        "entity": "price_max"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "price_min",
+        "start": 3,
+        "end": 6,
+        "confidence_entity": 0.552250862121582,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "price_min",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.552649199962616,
+        "value": "500",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "nothing guitar?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "nothing",
+        "entity": "product_name"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

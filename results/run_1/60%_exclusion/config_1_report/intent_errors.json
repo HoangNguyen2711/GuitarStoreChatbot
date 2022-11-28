@@ -1,0 +1,290 @@
+[
+  {
+    "text": "no",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.30656757950782776
+    }
+  },
+  {
+    "text": "thôi",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.2750779092311859
+    }
+  },
+  {
+    "text": "chất liệu",
+    "intent": "material",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.448849081993103
+    }
+  },
+  {
+    "text": "mặt hàng kinh doanh của shop là gì",
+    "intent": "shopfor",
+    "intent_prediction": {
+      "name": "product_category",
+      "confidence": 0.26712074875831604
+    }
+  },
+  {
+    "text": "tiền ship",
+    "intent": "ship_fee",
+    "intent_prediction": {
+      "name": "return",
+      "confidence": 0.5633970499038696
+    }
+  },
+  {
+    "text": "goodbye",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.9551263451576233
+    }
+  },
+  {
+    "text": "Tell me about your return policy",
+    "intent": "return",
+    "intent_prediction": {
+      "name": "product_price",
+      "confidence": 0.29709580540657043
+    }
+  },
+  {
+    "text": "tin tức",
+    "intent": "news",
+    "intent_prediction": {
+      "name": "register_account",
+      "confidence": 0.10777592658996582
+    }
+  },
+  {
+    "text": "Broadcast",
+    "intent": "news",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.26417118310928345
+    }
+  },
+  {
+    "text": "ok",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.976069986820221
+    }
+  },
+  {
+    "text": "post office",
+    "intent": "shop_mail",
+    "intent_prediction": {
+      "name": "product_price",
+      "confidence": 0.7506730556488037
+    }
+  },
+  {
+    "text": "có code giảm giá không",
+    "intent": "promotion",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.21502675116062164
+    }
+  },
+  {
+    "text": "thời tiết hôm nay thế nào",
+    "intent": "weather",
+    "intent_prediction": {
+      "name": "payment_methods",
+      "confidence": 0.6288722157478333
+    }
+  },
+  {
+    "text": "climate",
+    "intent": "weather",
+    "intent_prediction": {
+      "name": "product_category",
+      "confidence": 0.4574819803237915
+    }
+  },
+  {
+    "text": "weather forecast?",
+    "intent": "weather",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.5552865266799927
+    }
+  },
+  {
+    "text": "loại sản phẩm",
+    "intent": "product_category",
+    "intent_prediction": {
+      "name": "product_price",
+      "confidence": 0.9513716101646423
+    }
+  },
+  {
+    "text": "group",
+    "intent": "product_category",
+    "intent_prediction": {
+      "name": "news",
+      "confidence": 0.11879386752843857
+    }
+  },
+  {
+    "text": "chào buổi sáng",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.24490773677825928
+    }
+  },
+  {
+    "text": "lô",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7358448505401611
+    }
+  },
+  {
+    "text": "làm sao đăng kí thành viên",
+    "intent": "register_account",
+    "intent_prediction": {
+      "name": "shop_mail",
+      "confidence": 0.8178728818893433
+    }
+  },
+  {
+    "text": "How can I pay",
+    "intent": "payment_methods",
+    "intent_prediction": {
+      "name": "help",
+      "confidence": 0.19800299406051636
+    }
+  },
+  {
+    "text": "street",
+    "intent": "shop_address",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.18524526059627533
+    }
+  },
+  {
+    "text": "places of business",
+    "intent": "shop_address",
+    "intent_prediction": {
+      "name": "product_price",
+      "confidence": 0.30665910243988037
+    }
+  },
+  {
+    "text": "maps",
+    "intent": "shop_address",
+    "intent_prediction": {
+      "name": "material",
+      "confidence": 0.1898108273744583
+    }
+  },
+  {
+    "text": "địa chỉ",
+    "intent": "shop_address",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.27414026856422424
+    }
+  },
+  {
+    "text": "It cost?",
+    "intent": "product_price",
+    "intent_prediction": {
+      "name": "ship_fee",
+      "confidence": 0.3824882209300995
+    }
+  },
+  {
+    "text": "How much does this product cost?",
+    "intent": "product_price",
+    "intent_prediction": {
+      "name": "return",
+      "confidence": 0.85044926404953
+    }
+  },
+  {
+    "text": "wow",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.21215568482875824
+    }
+  },
+  {
+    "text": "super sad",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "product_detail",
+      "confidence": 0.7432231903076172
+    }
+  },
+  {
+    "text": "không vui",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.596195638179779
+    }
+  },
+  {
+    "text": "quá đã",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.48385366797447205
+    }
+  },
+  {
+    "text": "super stoked",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "product_detail",
+      "confidence": 0.873935341835022
+    }
+  },
+  {
+    "text": "giải thích",
+    "intent": "help",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.17109134793281555
+    }
+  },
+  {
+    "text": "cíu",
+    "intent": "help",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.3714546859264374
+    }
+  },
+  {
+    "text": "hỗ trợ",
+    "intent": "help",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.33139568567276
+    }
+  },
+  {
+    "text": "awesome service",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "weather",
+      "confidence": 0.31272080540657043
+    }
+  }
+]

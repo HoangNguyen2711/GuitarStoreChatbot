@@ -1,0 +1,242 @@
+[
+  {
+    "text": "hủy đơn",
+    "intent": "cancel",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.28209951519966125
+    }
+  },
+  {
+    "text": "đéo",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.18940283358097076
+    }
+  },
+  {
+    "text": "no",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.2781485319137573
+    }
+  },
+  {
+    "text": "string",
+    "intent": "material",
+    "intent_prediction": {
+      "name": "product_detail",
+      "confidence": 0.3474779427051544
+    }
+  },
+  {
+    "text": "price of shipping to",
+    "intent": "ship_fee",
+    "intent_prediction": {
+      "name": "product_price",
+      "confidence": 0.3251936435699463
+    }
+  },
+  {
+    "text": "good by",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.3019222021102905
+    }
+  },
+  {
+    "text": "return policy?",
+    "intent": "return",
+    "intent_prediction": {
+      "name": "news",
+      "confidence": 0.3847842216491699
+    }
+  },
+  {
+    "text": "How to return?",
+    "intent": "return",
+    "intent_prediction": {
+      "name": "payment_methods",
+      "confidence": 0.23472726345062256
+    }
+  },
+  {
+    "text": "Discovery",
+    "intent": "news",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.28669723868370056
+    }
+  },
+  {
+    "text": "Rumor",
+    "intent": "news",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.20619641244411469
+    }
+  },
+  {
+    "text": "uh",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.26104024052619934
+    }
+  },
+  {
+    "text": "uk",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.16734278202056885
+    }
+  },
+  {
+    "text": "có code giảm giá không",
+    "intent": "promotion",
+    "intent_prediction": {
+      "name": "product_price",
+      "confidence": 0.49289166927337646
+    }
+  },
+  {
+    "text": "đi tới shop có được không",
+    "intent": "weather",
+    "intent_prediction": {
+      "name": "shop_address",
+      "confidence": 0.584618866443634
+    }
+  },
+  {
+    "text": "thời tiết hôm nay thế nào",
+    "intent": "weather",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.11566926538944244
+    }
+  },
+  {
+    "text": "list",
+    "intent": "product_category",
+    "intent_prediction": {
+      "name": "shop_mail",
+      "confidence": 0.5101917386054993
+    }
+  },
+  {
+    "text": "chào bạn",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "product_price",
+      "confidence": 0.11636201292276382
+    }
+  },
+  {
+    "text": "hế lô",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.28209951519966125
+    }
+  },
+  {
+    "text": "làm sao đăng kí thành viên",
+    "intent": "register_account",
+    "intent_prediction": {
+      "name": "product_price",
+      "confidence": 0.13596351444721222
+    }
+  },
+  {
+    "text": "address",
+    "intent": "shop_address",
+    "intent_prediction": {
+      "name": "shop_mail",
+      "confidence": 0.34455686807632446
+    }
+  },
+  {
+    "text": "chỗ",
+    "intent": "shop_address",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.18940283358097076
+    }
+  },
+  {
+    "text": "How Much Are These?",
+    "intent": "product_price",
+    "intent_prediction": {
+      "name": "shop_address",
+      "confidence": 0.12218254804611206
+    }
+  },
+  {
+    "text": "not very good",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.6214826703071594
+    }
+  },
+  {
+    "text": "rất buồn",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.28209951519966125
+    }
+  },
+  {
+    "text": "my day was horrible",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "shop_mail",
+      "confidence": 0.5135440230369568
+    }
+  },
+  {
+    "text": "tuyệt vời",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.28209951519966125
+    }
+  },
+  {
+    "text": "hoàn hảo",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.26196688413619995
+    }
+  },
+  {
+    "text": "quá tuyệt",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.28209951519966125
+    }
+  },
+  {
+    "text": "ty",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.41806113719940186
+    }
+  },
+  {
+    "text": "cảm ơn",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.28209951519966125
+    }
+  }
+]

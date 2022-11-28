@@ -1,0 +1,40 @@
+[
+  {
+    "text": "Your store have abcxyz model?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 22,
+        "value": "abcxyz",
+        "entity": "product_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "nothing guitar?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "nothing",
+        "entity": "product_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "hoàn hảo",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product_name",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.4794308841228485,
+        "value": "hoàn",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

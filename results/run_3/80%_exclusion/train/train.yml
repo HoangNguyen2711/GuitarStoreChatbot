@@ -1,0 +1,124 @@
+version: "3.1"
+nlu:
+- intent: cancel
+  examples: |
+    - cancel
+- intent: deny
+  examples: |
+    - không đời nào
+- intent: shopfor
+  examples: |
+    - shop kinh doanh gì vậy
+- intent: material
+  examples: |
+    - wood
+- intent: ship_fee
+  examples: |
+    - có freeship không
+    - phí ship
+- intent: bot_challenge
+  examples: |
+    - bạn là ai vậy
+- intent: goodbye
+  examples: |
+    - good by
+    - cee you later
+- intent: return
+  examples: |
+    - muốn trả lại hàng
+- intent: news
+  examples: |
+    - What's news?
+    - có gì mới không
+- intent: weather
+  examples: |
+    - thời tiết hôm nay thế nào
+- intent: affirm
+  examples: |
+    - correct
+    - ô kê
+- intent: shop_mail
+  examples: |
+    - your email
+    - can i have your email
+- intent: promotion
+  examples: |
+    - discount on the product?
+    - a discount code?
+- intent: product_category
+  examples: |
+    - list
+    - class
+- intent: greet
+  examples: |
+    - xin chào
+    - lô
+- intent: register_account
+  examples: |
+    - Where to sign up
+    - tạo tài khoản
+- intent: payment_methods
+  examples: |
+    - có mấy cách thanh toán?
+    - How can I pay
+- intent: sortprice
+  examples: |
+    - từ [100](price_min) tới [500](price_max) thì có sản phẩm nào
+    - Cho mình hỏi có sản phẩm nào từ [100](price_min) tới [500](price_max) không?
+    - từ [100](price_min) tới [500](price_max) thì có sản phẩm nào thế
+- intent: shop_address
+  examples: |
+    - places of business
+    - shop nằm ở đâu
+- intent: product_price
+  examples: |
+    - How Much Are These?
+    - the price of this product
+    - Sản phẩm này giá bao nhiêu
+- intent: product_detail
+  examples: |
+    - [nothing](product_name) guitar?
+    - [Kramer](product_name) guitar?
+    - I want [abcxyz](product_name) guitar
+    - [Super](product_name) guitar?
+- intent: mood_unhappy
+  examples: |
+    - super sad
+    - my day was horrible
+    - thất vọng
+- intent: mood_great
+  examples: |
+    - super stoked
+    - extremely good
+    - yay
+    - perfect
+- intent: help
+  examples: |
+    - assist
+    - can you assist me
+    - help me
+    - I need some help
+    - would you help me
+    - I need help
+- intent: thanks
+  examples: |
+    - thank you again
+    - đội ơn
+    - alright thanks
+    - thanks so much
+    - I thank you
+    - It's appreciated
+    - alright thank you
+    - Thanks for the help!
+    - perfect thank you
+- synonym: khuyến mãi
+  examples: |
+    - sale
+    - discount
+- synonym: trả hàng
+  examples: |
+    - refund
+    - cashback
+- synonym: hủy đơn
+  examples: |
+    - cancel

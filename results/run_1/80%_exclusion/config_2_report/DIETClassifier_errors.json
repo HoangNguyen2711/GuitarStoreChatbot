@@ -1,0 +1,52 @@
+[
+  {
+    "text": "Đàn Super có không vậy?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 9,
+        "value": "Super",
+        "entity": "product_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Shop có Super không?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 13,
+        "value": "Super",
+        "entity": "product_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Alvarez guitar?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Alvarez",
+        "entity": "product_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "so saad",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product_name",
+        "start": 3,
+        "end": 7,
+        "confidence_entity": 0.9851623177528381,
+        "value": "saad",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

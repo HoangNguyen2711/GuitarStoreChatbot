@@ -1,0 +1,184 @@
+version: "3.1"
+nlu:
+- intent: cancel
+  examples: |
+    - hủy đơn
+    - làm sao để hủy đơn hàng ạ?
+- intent: deny
+  examples: |
+    - no
+    - không đời nào
+- intent: shopfor
+  examples: |
+    - shop kinh doanh gì vậy
+    - shop bán gì đấy
+- intent: material
+  examples: |
+    - made of
+    - chất liệu
+- intent: ship_fee
+  examples: |
+    - How much does it cost to ship to
+    - phí ship
+    - shipping fee
+- intent: bot_challenge
+  examples: |
+    - bạn là bot hay người?
+    - am I talking to a bot?
+    - bạn phải người không
+- intent: goodbye
+  examples: |
+    - bye bye
+    - good by
+    - goodbye
+- intent: return
+  examples: |
+    - làm sao để trả hàng
+    - return this product?
+    - Tell me about your return policy
+- intent: news
+  examples: |
+    - Rumor
+    - Discovery
+    - What's news?
+- intent: weather
+  examples: |
+    - weather today?
+    - climate
+    - đi tới shop có được không
+- intent: affirm
+  examples: |
+    - uhm
+    - đúng vậy
+    - correct
+    - uh
+- intent: shop_mail
+  examples: |
+    - what's your mail
+    - can i have your email
+    - communication
+    - làm sao liên lạc với shop
+- intent: promotion
+  examples: |
+    - Is there any promotions?
+    - có mã giảm giá không
+    - có code giảm giá không
+- intent: product_category
+  examples: |
+    - I need a list of category
+    - division
+    - kind
+    - loại sản phẩm
+- intent: greet
+  examples: |
+    - hey
+    - lô
+    - có ai không
+    - chào
+- intent: register_account
+  examples: |
+    - create an account
+    - đăng kí thành viên
+    - làm sao đăng kí thành viên
+    - tạo nick
+    - sign up
+- intent: payment_methods
+  examples: |
+    - What kind of payment method do you accept
+    - Where can I pay
+    - How can I pay
+    - thanh toán thế nào?
+- intent: sortprice
+  examples: |
+    - có sản phẩm nào từ [100](price_min) tới [500](price_max)?
+    - [100](price_min) đến [500](price_max)
+    - [100](price_min) tới [500](price_max) thì có sản phẩm nào ạ
+    - [100](price_min) tới [500](price_max)
+    - Cho mình hỏi có sản phẩm nào từ [100](price_min) tới [500](price_max) không?
+- intent: shop_address
+  examples: |
+    - đường tới shop
+    - where you at?
+    - cho hỏi shop ở đâu vậy?
+    - địa chỉ của shop
+    - maps
+- intent: product_price
+  examples: |
+    - Check the Price of This for Me?
+    - Price of This?
+    - the Cost of This?
+    - Sản phẩm này giá bao nhiêu
+    - How Much Are These?
+    - giá tiền sản phẩm
+- intent: product_detail
+  examples: |
+    - Do you have [abc](product_name) guitar?
+    - Shop có mẫu [Super](product_name) không?
+    - [Alvarez](product_name) guitar?
+    - [Gold Tone](product_name) guitar?
+    - Shop có [Super](product_name) không?
+    - [Legator](product_name) guitar?
+    - [Mitchell](product_name) guitar?
+- intent: mood_unhappy
+  examples: |
+    - thất vọng
+    - buồn
+    - extremly sad
+    - sad
+    - my day was horrible
+    - chán thiệt
+    - chán
+- intent: mood_great
+  examples: |
+    - great
+    - I am feeling very good
+    - quá tuyệt
+    - yay
+    - I am going to save the world
+    - so perfect
+    - dữ
+    - perfect
+- intent: help
+  examples: |
+    - help me out
+    - need your help
+    - I need you help me now
+    - I need help
+    - assistance
+    - help me with a problem
+    - help
+    - I need you right now
+    - hỗ trợ
+    - I need you to do something for me
+    - I need you to help me
+    - help us
+- intent: thanks
+  examples: |
+    - no thank you that's all
+    - much thanks
+    - I appreciate it
+    - cheers
+    - I thank you
+    - alright thank you
+    - well thanks
+    - thnx
+    - many thanks
+    - thanks so much
+    - well thank you
+    - thx
+    - đội ơn
+    - you helped a lot thank you
+    - awesome service
+    - good thanks
+    - cảm ơn nhiều
+- synonym: khuyến mãi
+  examples: |
+    - sale
+    - discount
+- synonym: trả hàng
+  examples: |
+    - refund
+    - cashback
+- synonym: hủy đơn
+  examples: |
+    - cancel

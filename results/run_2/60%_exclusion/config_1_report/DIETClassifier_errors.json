@@ -1,0 +1,49 @@
+[
+  {
+    "text": "từ 100 tới 500 thì có sản phẩm nào",
+    "entities": [
+      {
+        "start": 3,
+        "end": 6,
+        "value": "100",
+        "entity": "price_min"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "500",
+        "entity": "price_max"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "price_min",
+        "start": 3,
+        "end": 6,
+        "confidence_entity": 0.6444419026374817,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "price_min",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.6104291081428528,
+        "value": "500",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "nothing guitar?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "nothing",
+        "entity": "product_name"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

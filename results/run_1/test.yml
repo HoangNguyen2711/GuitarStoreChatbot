@@ -1,0 +1,139 @@
+version: "3.1"
+nlu:
+- intent: cancel
+  examples: |
+    - cancel
+- intent: deny
+  examples: |
+    - no
+    - thôi
+- intent: material
+  examples: |
+    - chất liệu
+- intent: shopfor
+  examples: |
+    - mặt hàng kinh doanh của shop là gì
+    - shop bán gì đấy
+- intent: bot_challenge
+  examples: |
+    - bạn là bot hay người?
+- intent: ship_fee
+  examples: |
+    - tiền ship
+    - ship
+- intent: goodbye
+  examples: |
+    - bai
+    - goodbye
+- intent: return
+  examples: |
+    - trả hàng
+    - Tell me about your return policy
+- intent: news
+  examples: |
+    - tin tức
+    - Broadcast
+- intent: affirm
+  examples: |
+    - uk
+    - ok
+- intent: shop_mail
+  examples: |
+    - what's your mail
+    - post office
+- intent: promotion
+  examples: |
+    - có code giảm giá không
+    - your promotions
+- intent: weather
+  examples: |
+    - thời tiết hôm nay thế nào
+    - climate
+    - weather forecast?
+- intent: product_category
+  examples: |
+    - loại sản phẩm
+    - group
+- intent: greet
+  examples: |
+    - chào buổi sáng
+    - hello
+    - lô
+- intent: register_account
+  examples: |
+    - làm sao đăng kí thành viên
+    - tạo nick
+- intent: payment_methods
+  examples: |
+    - có mấy cách thanh toán?
+    - deposit
+    - How can I pay
+- intent: sortprice
+  examples: |
+    - có sản phẩm nào từ [100](price_min) tới [500](price_max) không thế?
+    - [100](price_min) tới [500](price_max) thì có sản phẩm nào ạ
+    - từ [100](price_min) tới [500](price_max)
+- intent: shop_address
+  examples: |
+    - street
+    - places of business
+    - maps
+    - địa chỉ
+- intent: product_price
+  examples: |
+    - It cost?
+    - the price of this product
+    - How much does this product cost?
+- intent: product_detail
+  examples: |
+    - [Legator](product_name) guitar?
+    - Đàn [Super](product_name) có không vậy?
+    - Shop có [Super](product_name) không?
+    - [Alvarez](product_name) guitar?
+- intent: mood_unhappy
+  examples: |
+    - so saad
+    - wow
+    - super sad
+    - không vui
+    - chán
+- intent: mood_great
+  examples: |
+    - so perfect
+    - perfect
+    - quá đã
+    - super stoked
+- intent: help
+  examples: |
+    - will you help me
+    - help me with a problem
+    - do me a favor
+    - giải thích
+    - help us
+    - I need you right now
+    - cíu
+    - hỗ trợ
+- intent: thanks
+  examples: |
+    - much appreciated
+    - very good thank you
+    - great thank you
+    - no thank you that's all
+    - thx
+    - much thanks
+    - thanks again
+    - terrific thank you
+    - awesome service
+    - thanks buddy
+    - thnx
+- synonym: khuyến mãi
+  examples: |
+    - sale
+    - discount
+- synonym: trả hàng
+  examples: |
+    - refund
+    - cashback
+- synonym: hủy đơn
+  examples: |
+    - cancel

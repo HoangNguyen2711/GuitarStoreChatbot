@@ -1,0 +1,42 @@
+[
+  {
+    "text": "Alvarez guitar?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Alvarez",
+        "entity": "product_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "super sad",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product_name",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9826274514198303,
+        "value": "super",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "super stoked",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product_name",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9827896356582642,
+        "value": "super",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

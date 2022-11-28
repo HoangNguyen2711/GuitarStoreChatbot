@@ -1,0 +1,130 @@
+[
+  {
+    "text": "string",
+    "intent": "material",
+    "intent_prediction": {
+      "name": "shop_address",
+      "confidence": 0.4167484641075134
+    }
+  },
+  {
+    "text": "good by",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.5415895581245422
+    }
+  },
+  {
+    "text": "Discovery",
+    "intent": "news",
+    "intent_prediction": {
+      "name": "promotion",
+      "confidence": 0.94520103931427
+    }
+  },
+  {
+    "text": "Rumor",
+    "intent": "news",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6718453764915466
+    }
+  },
+  {
+    "text": "thời tiết hôm nay thế nào",
+    "intent": "weather",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.266968697309494
+    }
+  },
+  {
+    "text": "raining",
+    "intent": "weather",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.11313321441411972
+    }
+  },
+  {
+    "text": "class",
+    "intent": "product_category",
+    "intent_prediction": {
+      "name": "help",
+      "confidence": 0.240342915058136
+    }
+  },
+  {
+    "text": "có ai ở đó không",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "shop_address",
+      "confidence": 0.25585252046585083
+    }
+  },
+  {
+    "text": "làm sao đăng kí thành viên",
+    "intent": "register_account",
+    "intent_prediction": {
+      "name": "shop_mail",
+      "confidence": 0.44127923250198364
+    }
+  },
+  {
+    "text": "address",
+    "intent": "shop_address",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.422373503446579
+    }
+  },
+  {
+    "text": "chỗ",
+    "intent": "shop_address",
+    "intent_prediction": {
+      "name": "help",
+      "confidence": 0.8990049362182617
+    }
+  },
+  {
+    "text": "unhappy",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.7479510307312012
+    }
+  },
+  {
+    "text": "my day was horrible",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "return",
+      "confidence": 0.3838079869747162
+    }
+  },
+  {
+    "text": "hoàn hảo",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.3573627173900604
+    }
+  },
+  {
+    "text": "awesome service",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "shop_address",
+      "confidence": 0.2914813756942749
+    }
+  },
+  {
+    "text": "ty",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5099053382873535
+    }
+  }
+]

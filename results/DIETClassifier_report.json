@@ -1,8 +1,15 @@
 {
-  "product_name": {
+  "price_min": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
+    "support": 15,
+    "confused_with": {}
+  },
+  "product_name": {
+    "precision": 0.92,
+    "recall": 1.0,
+    "f1-score": 0.9583333333333334,
     "support": 23,
     "confused_with": {}
   },
@@ -13,30 +20,23 @@
     "support": 15,
     "confused_with": {}
   },
-  "price_min": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 15,
-    "confused_with": {}
-  },
   "micro avg": {
-    "precision": 1.0,
+    "precision": 0.9636363636363636,
     "recall": 1.0,
-    "f1-score": 1.0,
+    "f1-score": 0.9814814814814815,
     "support": 53
   },
   "macro avg": {
-    "precision": 1.0,
+    "precision": 0.9733333333333333,
     "recall": 1.0,
-    "f1-score": 1.0,
+    "f1-score": 0.9861111111111112,
     "support": 53
   },
   "weighted avg": {
-    "precision": 1.0,
+    "precision": 0.9652830188679244,
     "recall": 1.0,
-    "f1-score": 1.0,
+    "f1-score": 0.9819182389937108,
     "support": 53
   },
-  "accuracy": 1.0
+  "accuracy": 0.9983870967741936
 }

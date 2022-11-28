@@ -1,0 +1,16 @@
+[
+  {
+    "text": "sos",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product_name",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.5918539762496948,
+        "value": "sos",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

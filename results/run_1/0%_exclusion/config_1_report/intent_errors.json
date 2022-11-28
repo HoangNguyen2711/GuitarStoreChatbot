@@ -1,0 +1,194 @@
+[
+  {
+    "text": "no",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.274467796087265
+    }
+  },
+  {
+    "text": "thôi",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.1427924484014511
+    }
+  },
+  {
+    "text": "chất liệu",
+    "intent": "material",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.8757772445678711
+    }
+  },
+  {
+    "text": "bai",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6412612199783325
+    }
+  },
+  {
+    "text": "tin tức",
+    "intent": "news",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.16548512876033783
+    }
+  },
+  {
+    "text": "Broadcast",
+    "intent": "news",
+    "intent_prediction": {
+      "name": "payment_methods",
+      "confidence": 0.3043203353881836
+    }
+  },
+  {
+    "text": "ok",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.8254987001419067
+    }
+  },
+  {
+    "text": "post office",
+    "intent": "shop_mail",
+    "intent_prediction": {
+      "name": "product_price",
+      "confidence": 0.700088381767273
+    }
+  },
+  {
+    "text": "thời tiết hôm nay thế nào",
+    "intent": "weather",
+    "intent_prediction": {
+      "name": "payment_methods",
+      "confidence": 0.8874627947807312
+    }
+  },
+  {
+    "text": "climate",
+    "intent": "weather",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.16012363135814667
+    }
+  },
+  {
+    "text": "loại sản phẩm",
+    "intent": "product_category",
+    "intent_prediction": {
+      "name": "product_price",
+      "confidence": 0.8988482356071472
+    }
+  },
+  {
+    "text": "group",
+    "intent": "product_category",
+    "intent_prediction": {
+      "name": "register_account",
+      "confidence": 0.19131962954998016
+    }
+  },
+  {
+    "text": "deposit",
+    "intent": "payment_methods",
+    "intent_prediction": {
+      "name": "ship_fee",
+      "confidence": 0.2220446765422821
+    }
+  },
+  {
+    "text": "street",
+    "intent": "shop_address",
+    "intent_prediction": {
+      "name": "register_account",
+      "confidence": 0.5284585356712341
+    }
+  },
+  {
+    "text": "maps",
+    "intent": "shop_address",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.2975838780403137
+    }
+  },
+  {
+    "text": "How much does this product cost?",
+    "intent": "product_price",
+    "intent_prediction": {
+      "name": "ship_fee",
+      "confidence": 0.40004390478134155
+    }
+  },
+  {
+    "text": "wow",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "material",
+      "confidence": 0.20914052426815033
+    }
+  },
+  {
+    "text": "super sad",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "product_detail",
+      "confidence": 0.7781400680541992
+    }
+  },
+  {
+    "text": "không vui",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8103392124176025
+    }
+  },
+  {
+    "text": "quá đã",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.4400971531867981
+    }
+  },
+  {
+    "text": "super stoked",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "product_detail",
+      "confidence": 0.9862568974494934
+    }
+  },
+  {
+    "text": "giải thích",
+    "intent": "help",
+    "intent_prediction": {
+      "name": "promotion",
+      "confidence": 0.626124382019043
+    }
+  },
+  {
+    "text": "cíu",
+    "intent": "help",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.17002035677433014
+    }
+  },
+  {
+    "text": "hỗ trợ",
+    "intent": "help",
+    "intent_prediction": {
+      "name": "shop_address",
+      "confidence": 0.4455844759941101
+    }
+  }
+]

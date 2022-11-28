@@ -1,0 +1,89 @@
+[
+  {
+    "text": "có sản phẩm nào từ 100 tới 500 không thế?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 22,
+        "value": "100",
+        "entity": "price_min"
+      },
+      {
+        "start": 27,
+        "end": 30,
+        "value": "500",
+        "entity": "price_max"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "price_max",
+        "start": 19,
+        "end": 22,
+        "confidence_entity": 0.6181758046150208,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "price_max",
+        "start": 27,
+        "end": 30,
+        "confidence_entity": 0.6052075624465942,
+        "value": "500",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Legator guitar?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Legator",
+        "entity": "product_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Alvarez guitar?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Alvarez",
+        "entity": "product_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "super sad",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product_name",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9992457628250122,
+        "value": "super",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "super stoked",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product_name",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9992749094963074,
+        "value": "super",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

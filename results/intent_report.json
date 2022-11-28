@@ -1,171 +1,89 @@
 {
-  "weather": {
+  "affirm": {
     "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+    "recall": 0.5454545454545454,
+    "f1-score": 0.7058823529411764,
     "support": 11,
-    "confused_with": {}
+    "confused_with": {
+      "mood_unhappy": 3,
+      "goodbye": 1
+    }
   },
   "goodbye": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+    "precision": 0.8181818181818182,
+    "recall": 0.9,
+    "f1-score": 0.8571428571428572,
     "support": 10,
-    "confused_with": {}
-  },
-  "sortprice": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 15,
-    "confused_with": {}
-  },
-  "promotion": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 11,
-    "confused_with": {}
-  },
-  "shopfor": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 7,
-    "confused_with": {}
-  },
-  "greet": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 13,
-    "confused_with": {}
-  },
-  "deny": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 7,
-    "confused_with": {}
-  },
-  "shop_address": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 18,
-    "confused_with": {}
-  },
-  "mood_unhappy": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 22,
-    "confused_with": {}
-  },
-  "news": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 10,
-    "confused_with": {}
+    "confused_with": {
+      "mood_unhappy": 1
+    }
   },
   "mood_great": {
     "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+    "recall": 0.7391304347826086,
+    "f1-score": 0.85,
     "support": 23,
-    "confused_with": {}
+    "confused_with": {
+      "mood_unhappy": 5,
+      "register_account": 1
+    }
   },
-  "product_price": {
+  "deny": {
     "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 18,
-    "confused_with": {}
-  },
-  "shop_mail": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 11,
-    "confused_with": {}
-  },
-  "payment_methods": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 14,
-    "confused_with": {}
-  },
-  "register_account": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 13,
-    "confused_with": {}
-  },
-  "bot_challenge": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 8,
-    "confused_with": {}
-  },
-  "affirm": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 11,
-    "confused_with": {}
-  },
-  "cancel": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "product_category": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 12,
-    "confused_with": {}
-  },
-  "help": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 39,
-    "confused_with": {}
-  },
-  "ship_fee": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 8,
-    "confused_with": {}
-  },
-  "return": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 10,
-    "confused_with": {}
+    "recall": 0.14285714285714285,
+    "f1-score": 0.25,
+    "support": 7,
+    "confused_with": {
+      "register_account": 3,
+      "mood_unhappy": 2
+    }
   },
   "material": {
     "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+    "recall": 0.7142857142857143,
+    "f1-score": 0.8333333333333333,
     "support": 7,
-    "confused_with": {}
+    "confused_with": {
+      "register_account": 1,
+      "mood_unhappy": 1
+    }
+  },
+  "return": {
+    "precision": 1.0,
+    "recall": 0.6,
+    "f1-score": 0.7499999999999999,
+    "support": 10,
+    "confused_with": {
+      "register_account": 4
+    }
+  },
+  "product_category": {
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9090909090909091,
+    "support": 12,
+    "confused_with": {
+      "register_account": 2
+    }
   },
   "thanks": {
     "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+    "recall": 0.8867924528301887,
+    "f1-score": 0.9400000000000001,
     "support": 53,
-    "confused_with": {}
+    "confused_with": {
+      "mood_unhappy": 3,
+      "register_account": 2
+    }
+  },
+  "news": {
+    "precision": 1.0,
+    "recall": 0.9,
+    "f1-score": 0.9473684210526316,
+    "support": 10,
+    "confused_with": {
+      "register_account": 1
+    }
   },
   "product_detail": {
     "precision": 1.0,
@@ -174,23 +92,149 @@
     "support": 21,
     "confused_with": {}
   },
-  "accuracy": 1.0,
-  "macro avg": {
+  "shop_address": {
+    "precision": 0.9375,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.8823529411764706,
+    "support": 18,
+    "confused_with": {
+      "mood_unhappy": 3
+    }
+  },
+  "promotion": {
+    "precision": 1.0,
+    "recall": 0.8181818181818182,
+    "f1-score": 0.9,
+    "support": 11,
+    "confused_with": {
+      "register_account": 1,
+      "mood_unhappy": 1
+    }
+  },
+  "bot_challenge": {
+    "precision": 1.0,
+    "recall": 0.875,
+    "f1-score": 0.9333333333333333,
+    "support": 8,
+    "confused_with": {
+      "register_account": 1
+    }
+  },
+  "greet": {
+    "precision": 0.9,
+    "recall": 0.6923076923076923,
+    "f1-score": 0.7826086956521738,
+    "support": 13,
+    "confused_with": {
+      "mood_unhappy": 3,
+      "register_account": 1
+    }
+  },
+  "mood_unhappy": {
+    "precision": 0.43137254901960786,
+    "recall": 1.0,
+    "f1-score": 0.6027397260273972,
+    "support": 22,
+    "confused_with": {}
+  },
+  "product_price": {
+    "precision": 0.9473684210526315,
+    "recall": 1.0,
+    "f1-score": 0.972972972972973,
+    "support": 18,
+    "confused_with": {}
+  },
+  "payment_methods": {
+    "precision": 1.0,
+    "recall": 0.9285714285714286,
+    "f1-score": 0.962962962962963,
+    "support": 14,
+    "confused_with": {
+      "register_account": 1
+    }
+  },
+  "register_account": {
+    "precision": 0.40625,
+    "recall": 1.0,
+    "f1-score": 0.5777777777777777,
+    "support": 13,
+    "confused_with": {}
+  },
+  "help": {
+    "precision": 1.0,
+    "recall": 0.8717948717948718,
+    "f1-score": 0.9315068493150686,
+    "support": 39,
+    "confused_with": {
+      "mood_unhappy": 5
+    }
+  },
+  "shop_mail": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
+    "support": 11,
+    "confused_with": {}
+  },
+  "cancel": {
+    "precision": 1.0,
+    "recall": 0.4,
+    "f1-score": 0.5714285714285715,
+    "support": 5,
+    "confused_with": {
+      "mood_unhappy": 2,
+      "weather": 1
+    }
+  },
+  "shopfor": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 7,
+    "confused_with": {}
+  },
+  "ship_fee": {
+    "precision": 1.0,
+    "recall": 0.875,
+    "f1-score": 0.9333333333333333,
+    "support": 8,
+    "confused_with": {
+      "register_account": 1
+    }
+  },
+  "weather": {
+    "precision": 0.9090909090909091,
+    "recall": 0.9090909090909091,
+    "f1-score": 0.9090909090909091,
+    "support": 11,
+    "confused_with": {
+      "shop_address": 1
+    }
+  },
+  "sortprice": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 15,
+    "confused_with": {}
+  },
+  "accuracy": 0.8567639257294429,
+  "macro avg": {
+    "precision": 0.9339905478937988,
+    "recall": 0.8186053470729435,
+    "f1-score": 0.8401170378652754,
     "support": 377
   },
   "weighted avg": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+    "precision": 0.9299228006344746,
+    "recall": 0.8567639257294429,
+    "f1-score": 0.8674114914691233,
     "support": 377
   },
   "micro avg": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+    "precision": 0.8567639257294429,
+    "recall": 0.8567639257294429,
+    "f1-score": 0.8567639257294429,
     "support": 377
   }
 }

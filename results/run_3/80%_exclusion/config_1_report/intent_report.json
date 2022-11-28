@@ -1,0 +1,250 @@
+{
+  "greet": {
+    "precision": 0.5,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.5714285714285715,
+    "support": 3,
+    "confused_with": {
+      "return": 1
+    }
+  },
+  "weather": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "news": 2,
+      "product_price": 1
+    }
+  },
+  "return": {
+    "precision": 0.3333333333333333,
+    "recall": 0.5,
+    "f1-score": 0.4,
+    "support": 2,
+    "confused_with": {
+      "goodbye": 1
+    }
+  },
+  "product_category": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "help": 1,
+      "news": 1
+    }
+  },
+  "thanks": {
+    "precision": 0.8,
+    "recall": 0.7272727272727273,
+    "f1-score": 0.761904761904762,
+    "support": 11,
+    "confused_with": {
+      "help": 1,
+      "mood_great": 1
+    }
+  },
+  "shop_mail": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "mood_great": 1
+    }
+  },
+  "promotion": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "affirm": 1,
+      "news": 1
+    }
+  },
+  "mood_great": {
+    "precision": 0.25,
+    "recall": 0.25,
+    "f1-score": 0.25,
+    "support": 4,
+    "confused_with": {
+      "product_category": 1,
+      "deny": 1,
+      "help": 1
+    }
+  },
+  "ship_fee": {
+    "precision": 0.4,
+    "recall": 1.0,
+    "f1-score": 0.5714285714285715,
+    "support": 2,
+    "confused_with": {}
+  },
+  "product_detail": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1-score": 0.4,
+    "support": 4,
+    "confused_with": {
+      "ship_fee": 2,
+      "sortprice": 1
+    }
+  },
+  "affirm": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "greet": 1,
+      "product_price": 1
+    }
+  },
+  "shopfor": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "bot_challenge": 1,
+      "shop_address": 1
+    }
+  },
+  "news": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "shopfor": 1,
+      "mood_great": 1
+    }
+  },
+  "bot_challenge": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "help": 1
+    }
+  },
+  "help": {
+    "precision": 0.6,
+    "recall": 0.75,
+    "f1-score": 0.6666666666666665,
+    "support": 8,
+    "confused_with": {
+      "product_category": 1,
+      "product_price": 1
+    }
+  },
+  "cancel": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "mood_unhappy": {
+    "precision": 1.0,
+    "recall": 0.4,
+    "f1-score": 0.5714285714285715,
+    "support": 5,
+    "confused_with": {
+      "affirm": 1,
+      "goodbye": 1
+    }
+  },
+  "sortprice": {
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1-score": 0.8571428571428571,
+    "support": 3,
+    "confused_with": {}
+  },
+  "material": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "goodbye": 1
+    }
+  },
+  "goodbye": {
+    "precision": 0.4,
+    "recall": 1.0,
+    "f1-score": 0.5714285714285715,
+    "support": 2,
+    "confused_with": {}
+  },
+  "shop_address": {
+    "precision": 0.5,
+    "recall": 0.25,
+    "f1-score": 0.3333333333333333,
+    "support": 4,
+    "confused_with": {
+      "shopfor": 1,
+      "greet": 1
+    }
+  },
+  "payment_methods": {
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.5,
+    "support": 3,
+    "confused_with": {
+      "return": 1,
+      "material": 1
+    }
+  },
+  "deny": {
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1-score": 0.5,
+    "support": 2,
+    "confused_with": {
+      "thanks": 1
+    }
+  },
+  "register_account": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "ship_fee": 1
+    }
+  },
+  "product_price": {
+    "precision": 0.42857142857142855,
+    "recall": 1.0,
+    "f1-score": 0.6,
+    "support": 3,
+    "confused_with": {}
+  },
+  "accuracy": 0.4868421052631579,
+  "macro avg": {
+    "precision": 0.4584761904761905,
+    "recall": 0.4250909090909091,
+    "f1-score": 0.3955238095238095,
+    "support": 76
+  },
+  "weighted avg": {
+    "precision": 0.5513471177944862,
+    "recall": 0.4868421052631579,
+    "f1-score": 0.47161654135338343,
+    "support": 76
+  },
+  "micro avg": {
+    "precision": 0.4868421052631579,
+    "recall": 0.4868421052631579,
+    "f1-score": 0.4868421052631579,
+    "support": 76
+  }
+}

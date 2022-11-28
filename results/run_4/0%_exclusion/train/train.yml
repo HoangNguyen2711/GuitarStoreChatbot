@@ -1,0 +1,339 @@
+version: "3.1"
+nlu:
+- intent: cancel
+  examples: |
+    - cancel
+    - hủy đơn
+    - làm sao để hủy đơn hàng ạ?
+- intent: deny
+  examples: |
+    - không bao giờ
+    - không
+    - không đời nào
+    - đéo
+- intent: shopfor
+  examples: |
+    - mặt hàng kinh doanh của shop là gì
+    - shop bán cái gì
+    - shop kinh doanh gì vậy
+    - shop bán gì
+- intent: material
+  examples: |
+    - làm bằng gì thế
+    - made of
+    - body
+    - string
+    - wood
+- intent: ship_fee
+  examples: |
+    - có freeship không
+    - ship
+    - How much does it cost to ship to
+    - price of shipping to
+    - shipping cost
+- intent: bot_challenge
+  examples: |
+    - bạn phải người không
+    - am I talking to a bot?
+    - bạn là bot hay người?
+    - bạn là ai vậy
+    - are you a human?
+    - are you a bot?
+- intent: goodbye
+  examples: |
+    - bye
+    - cee you later
+    - tạm biệt
+    - goodbye
+    - bai
+    - bái bai
+    - bye bye
+- intent: return
+  examples: |
+    - làm sao để trả hàng
+    - my money back
+    - return policy?
+    - trả hàng
+    - lấy lại tiền
+    - return this product?
+    - How to return?
+- intent: news
+  examples: |
+    - Rumor
+    - Report
+    - What's news?
+    - có gì mới không
+    - Broadcast
+    - Statement
+    - GuitarWorld?
+- intent: weather
+  examples: |
+    - weather forecast?
+    - temperature
+    - come into the store
+    - đi tới shop có được không
+    - trời có mưa không?
+    - weather today?
+    - climate
+- intent: affirm
+  examples: |
+    - ukm
+    - đương nhiên rồi
+    - yes
+    - ô kê
+    - ok
+    - ừ
+    - uk
+    - uhm
+- intent: shop_mail
+  examples: |
+    - air mail
+    - postal
+    - can i have your email
+    - your email
+    - post office
+    - cho hỏi email của shop với ạ
+    - what's your mail
+    - communication
+- intent: promotion
+  examples: |
+    - coupon?
+    - Is there any sale?
+    - có mã giảm giá không
+    - discount on the product?
+    - khuyến mãi
+    - Is there any promotions?
+    - có khuyến mãi không
+    - your promotions
+- intent: product_category
+  examples: |
+    - Give me a category of category
+    - grade
+    - division
+    - kind
+    - loại sản phẩm
+    - class
+    - group
+    - I need a list of category
+    - danh mục sản phẩm
+- intent: greet
+  examples: |
+    - chào
+    - hello there
+    - chào bạn
+    - có ai không
+    - hey
+    - lô
+    - chào buổi sáng
+    - hi
+    - hello
+- intent: register_account
+  examples: |
+    - Where to sign up
+    - How to sign up
+    - tạo tài khoản
+    - set up an account
+    - tạo nick
+    - đăng nhập vào
+    - tạo acc
+    - làm sao đăng kí thành viên
+    - register an account
+    - sign up
+- intent: payment_methods
+  examples: |
+    - trả tiền
+    - How to pay
+    - cash
+    - paid
+    - How can I pay
+    - thanh toán
+    - What kind of payment method do you accept
+    - deposit
+    - thanh toán thế nào?
+    - có mấy cách thanh toán?
+- intent: sortprice
+  examples: |
+    - [100](price_min) tới [500](price_max)
+    - từ [100](price_min) đến [500](price_max) có sản phẩm nào vậy?
+    - có sản phẩm nào từ [100](price_min) tới [500](price_max) không thế?
+    - từ [100](price_min) tới [500](price_max) thì có sản phẩm nào thế
+    - Sản phẩm giá từ [100](price_min) cho đến [500](price_max)
+    - [100](price_min) tới [500](price_max) thì có sản phẩm nào ạ
+    - sản phẩm trong tầm giá [100](price_min) - [500](price_max)
+    - [100](price_min) đến [500](price_max)
+    - Cho mình hỏi có sản phẩm nào từ [100](price_min) tới [500](price_max) không?
+    - có sản phẩm nào từ [100](price_min) đến [500](price_max) không?
+    - có sản phẩm nào từ [100](price_min) tới [500](price_max)?
+- intent: shop_address
+  examples: |
+    - place of residence
+    - địa chỉ của shop
+    - locate
+    - address
+    - maps
+    - where are you?
+    - where you at?
+    - cho hỏi shop ở đâu vậy?
+    - chỗ
+    - home
+    - địa chỉ
+    - location
+    - Where are you from?
+- intent: product_price
+  examples: |
+    - Tell Me the Price of This?
+    - Sản phẩm này giá bao nhiêu
+    - giá
+    - giá sản phẩm
+    - What Is the Price of This?
+    - How Much It Costs?
+    - Bill
+    - the Cost of This?
+    - giá tiền sản phẩm
+    - the price of this product
+    - Price of This?
+    - This Cost?
+    - Check the Price of This for Me?
+    - Price of this?
+- intent: product_detail
+  examples: |
+    - [Gold Tone](product_name) guitar?
+    - Your shop have [abc](product_name) guitar?
+    - I want [abcxyz](product_name) guitar
+    - Your store have [abcxyz](product_name) model?
+    - [Kramer](product_name) guitar?
+    - [Alvarez](product_name) guitar?
+    - [Hofner](product_name) guitar?
+    - Bạn có [Super](product_name) không?
+    - I want this [abc](product_name) guitar?
+    - Do you have [abc](product_name) guitar?
+    - Shop có [Super](product_name) không?
+    - Shop có mẫu [Super](product_name) không?
+    - [Mitchell](product_name) guitar?
+    - [Legator](product_name) guitar?
+    - [abc](product_name) guitar?
+    - [G&L CLF](product_name) guitar?
+- intent: mood_unhappy
+  examples: |
+    - thất vọng
+    - I am sad
+    - I don't feel very well
+    - very sad
+    - not very good
+    - my day was horrible
+    - super sad
+    - I'm so sad
+    - không vui
+    - so saad
+    - rất buồn
+    - chán
+    - not good
+    - so sad
+    - wow
+    - I am disappointed
+- intent: mood_great
+  examples: |
+    - so good
+    - tuyệt
+    - super stoked
+    - tuyệt vời
+    - quá tuyệt
+    - I am great
+    - yay
+    - feeling like a king
+    - so so perfect
+    - quá đã
+    - I am going to save the world
+    - extremely good
+    - so perfect
+    - I am feeling very good
+    - yeah
+    - wonderful
+    - great
+    - hoàn hảo
+- intent: help
+  examples: |
+    - need help
+    - I need your help
+    - do me a favor
+    - please help me
+    - I need a hand
+    - help me out
+    - I need you to help me
+    - help us
+    - I need help
+    - need your help
+    - help
+    - help me with that
+    - do you help me
+    - can help me
+    - assist
+    - help me with a problem
+    - assistance
+    - you help me
+    - you can help me help me with something
+    - are you going to help me
+    - assist me
+    - help me
+    - I need you right now
+    - I need you to do something for me
+    - cứu
+    - giúp
+    - do you want to help me
+    - would you help me
+    - can u help me
+    - sos
+- intent: thanks
+  examples: |
+    - much thanks
+    - thank you so much
+    - nice thank you
+    - It's appreciated
+    - well thank you
+    - thanks again
+    - thx for your help
+    - ok thx
+    - thanks for your help
+    - Amazing service
+    - great thank you
+    - cảm ơn
+    - đội ơn
+    - thanks buddy
+    - awesome service
+    - thanks love
+    - perfect thank you
+    - no thank you that's all
+    - so nice of you
+    - thnx
+    - alright thank you
+    - thank you that will be all
+    - good thanks
+    - appreciate your help
+    - that's appreciated
+    - much appreciated
+    - thanx
+    - very good thank you
+    - appreciate all the help
+    - mơn nhiều
+    - cảm ơn nhiều
+    - thank you again
+    - thank you
+    - alright thanks
+    - Thanks for the help!
+    - thanks so much
+    - thank you for your help
+    - sure, np. thanks!
+    - I appreciate it
+    - terrific thank you
+    - thanks a lot
+- synonym: khuyến mãi
+  examples: |
+    - sale
+    - discount
+- synonym: trả hàng
+  examples: |
+    - refund
+    - cashback
+- synonym: hủy đơn
+  examples: |
+    - cancel

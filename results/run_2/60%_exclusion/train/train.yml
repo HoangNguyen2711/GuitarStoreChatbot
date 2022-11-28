@@ -1,0 +1,184 @@
+version: "3.1"
+nlu:
+- intent: cancel
+  examples: |
+    - cancel đơn hàng
+    - làm sao để hủy đơn hàng ạ?
+- intent: deny
+  examples: |
+    - không đời nào
+    - không được
+- intent: shopfor
+  examples: |
+    - shop bán gì
+    - shop bạn bán cái gì
+- intent: material
+  examples: |
+    - made of
+    - làm bằng gì thế
+- intent: ship_fee
+  examples: |
+    - ship
+    - có freeship không
+    - shipping cost
+- intent: bot_challenge
+  examples: |
+    - are you a human?
+    - am I talking to a human?
+    - bạn phải bot không?
+- intent: goodbye
+  examples: |
+    - bai
+    - see you again
+    - tạm biệt
+- intent: return
+  examples: |
+    - return this product?
+    - send it back
+    - my money back
+- intent: news
+  examples: |
+    - Statement
+    - News?
+    - Report
+- intent: weather
+  examples: |
+    - trời có nắng không?
+    - temperature
+    - go to the store
+- intent: affirm
+  examples: |
+    - đúng vậy
+    - correct
+    - đương nhiên rồi
+    - ô kê
+- intent: shop_mail
+  examples: |
+    - cho hỏi email của shop với ạ
+    - post office
+    - air mail
+    - email
+- intent: promotion
+  examples: |
+    - Is there any sale?
+    - có khuyến mãi không
+    - your promotions
+- intent: product_category
+  examples: |
+    - danh mục sản phẩm
+    - grade
+    - kind
+    - group
+- intent: greet
+  examples: |
+    - chào
+    - hey
+    - xin chào
+    - alo
+- intent: register_account
+  examples: |
+    - create an account
+    - tạo acc
+    - tạo tài khoản
+    - Where to sign up
+    - đăng kí thành viên
+- intent: payment_methods
+  examples: |
+    - payment
+    - What kind of payment method do you accept
+    - How to pay
+    - trả tiền sao?
+- intent: sortprice
+  examples: |
+    - [100](price_min) tới [500](price_max)
+    - Cho mình hỏi có sản phẩm nào từ [100](price_min) tới [500](price_max) không?
+    - Sản phẩm giá từ [100](price_min) cho đến [500](price_max)
+    - từ [100](price_min) tới [500](price_max)
+    - [100](price_min) tới [500](price_max) thì có sản phẩm nào ạ
+- intent: shop_address
+  examples: |
+    - locate
+    - tọa lạc
+    - maps
+    - home
+    - where you at?
+- intent: product_price
+  examples: |
+    - Sản phẩm này giá bao nhiêu
+    - the price of this product
+    - giá
+    - Tell Me the Price of This?
+    - Check the Price of This for Me?
+    - giá sản phẩm
+- intent: product_detail
+  examples: |
+    - I want this [abc](product_name) guitar?
+    - I want [abcxyz](product_name) guitar
+    - [Legator](product_name) guitar?
+    - Shop có [Super](product_name) không?
+    - Đàn [Super](product_name) có không vậy?
+    - [Hofner](product_name) guitar?
+    - Your shop have [abc](product_name) guitar?
+- intent: mood_unhappy
+  examples: |
+    - thất vọng
+    - not good
+    - chán
+    - buồn
+    - I don't feel very well
+    - buồn quá
+    - không vui
+- intent: mood_great
+  examples: |
+    - super stoked
+    - yay
+    - yeah
+    - I am going to save the world
+    - wonderful
+    - quá đã
+    - perfect
+    - so good
+- intent: help
+  examples: |
+    - help me out
+    - assistance
+    - do you want to help me
+    - help
+    - can help me
+    - I want your help
+    - help me
+    - sos
+    - giải thích
+    - can u help me
+    - I need you help me now
+    - help me with that
+- intent: thanks
+  examples: |
+    - tnx
+    - cảm ơn nhiều
+    - thanks so much
+    - many thanks
+    - đội ơn
+    - you helped a lot thank you
+    - thanks for your help
+    - alright thank you
+    - thank you
+    - so nice of you
+    - thank you again
+    - much appreciated
+    - much thanks
+    - thanks again
+    - thx for your help
+    - Cool. Thank you. I really like what you're doing.
+    - thx
+- synonym: khuyến mãi
+  examples: |
+    - sale
+    - discount
+- synonym: trả hàng
+  examples: |
+    - refund
+    - cashback
+- synonym: hủy đơn
+  examples: |
+    - cancel
