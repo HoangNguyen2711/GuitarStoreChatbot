@@ -376,41 +376,38 @@ nlu:
 
 - intent: product_detail
   examples: |
-    - Do you have [abc](product_name) guitar?
-    - I want this [abc](product_name) guitar?
-    - Your store have [abcxyz](product_name) guitar?
-    - [Super](product_name) guitar?
-    - [Legator](product_name) guitar?
-    - [Alvarez](product_name) guitar?
-    - [Kramer](product_name) guitar?
-    - [G&L CLF](product_name) guitar?
-    - [Hofner](product_name) guitar?
-    - [Gold Tone](product_name) guitar?
-    - [Mitchell](product_name) guitar?
-    - [nothing](product_name) guitar?
-    - [abc](product_name) guitar?
-    - Your shop have [abc](product_name) guitar?
-    - I want [abcxyz](product_name) guitar
-    - Your store have [abcxyz](product_name) model?
-    - Shop có [Super](product_name) không?
+    - [Super](product_name)?
+    - [Legator](product_name)?
+    - [Alvarez](product_name)?
+    - [Kramer](product_name)?
+    - [G&L CLF](product_name)?
+    - [Hofner](product_name)?
+    - [Gold Tone](product_name)?
+    - [Mitchell](product_name)?
+    - [nothing](product_name)?
+    - [abc](product_name)?
+    - Shop có đàn [abc](product_name) không?
+    - Có đàn [abcxyz](product_name) không?
+    - Đàn [abcxyz](product_name)?
+    - Mẫu [Super](product_name)?
     - Shop có mẫu [Super](product_name) không?
     - Đàn [Super](product_name) có không vậy?
     - Bạn có [Super](product_name) không?
     - Cho mình hỏi [Super](product_name) có không?
-    - How much does this [Super](product_name) cost?
-    - the price of this [Super](product_name)
-    - How Much Is [Super](product_name)?
-    - How Much Are [Super](product_name)?
-    - [Super](product_name) Cost?
-    - What Is the Price of [Super](product_name)?
-    - Price of [Super](product_name)?
-    - the Cost of [Super](product_name)?
-    - How Much [Super](product_name) Costs?
-    - Tell Me the Price of [Super](product_name)?
-    - Check the Price of [Super](product_name) for Me?
-    - Price of [Super](product_name)?
-    - [Super](product_name) cost?
-    - Bill [Super](product_name)
+    - Đàn [Super](product_name) giá bao nhiêu?
+    - Cái [Super](product_name) này giá bao nhiêu?
+    - Đàn [Super](product_name) giá ?
+    - Trị giá [Super](product_name)?
+    - [Super](product_name) bao nhiêu?
+    - Giá của [Super](product_name)?
+    - Xin giá [Super](product_name)?
+    - Cho hỏi [Super](product_name) giáo thế nào ?
+    - [Super](product_name) giá sao?
+    - Cho mình xin giá [Super](product_name)?
+    - Kiểm tra giá [Super](product_name)?
+    - Giá sản phẩm [Super](product_name)?
+    - [Super](product_name) giá?
+    - Xin giá [Super](product_name)
     - [Super](product_name) này giá bao nhiêu
     - giá [Super](product_name)
     - giá sản phẩm [Super](product_name)
@@ -473,6 +470,7 @@ nlu:
     - bao giờ nhận hàng
     - mấy ngày có hàng
     - đặt hàng bao lâu có
+    - giao hàng trong bao lâu
   
 - intent: guarantee
   examples: |
