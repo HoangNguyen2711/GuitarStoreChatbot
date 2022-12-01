@@ -16,6 +16,9 @@ nlu:
     - có ai ở đó không
     - có ai không
     - lô
+    - ê bot
+    - ê
+    - bot ơi
   
 - intent: goodbye
   examples: |
@@ -52,7 +55,6 @@ nlu:
     - không bao giờ
     - không được
     - không đời nào
-    - đéo
 
 - intent: mood_great
   examples: |
@@ -254,6 +256,10 @@ nlu:
     - level
     - loại sản phẩm
     - danh mục sản phẩm
+    - shop bạn có loại sản phẩm nào thế
+    - shop bạn có những danh mục sản phẩm nào
+    - cho mình xin danh mục sản phẩm với
+    - cho mình xin danh sách loại sản phẩm với
 
 - intent: promotion
   examples: |
@@ -268,6 +274,7 @@ nlu:
     - khuyến mãi
     - có mã giảm giá không
     - có code giảm giá không
+    - shop có sale hông?
 
 
 - intent: thanks
@@ -326,26 +333,6 @@ nlu:
     - mơn nhiều
     - đội ơn
 
-- intent: product_price
-  examples: |
-    - How much does this product cost?
-    - the price of this product
-    - How Much Is This?
-    - How Much Are These?
-    - This Cost?
-    - What Is the Price of This?
-    - Price of This?
-    - the Cost of This?
-    - How Much It Costs?
-    - Tell Me the Price of This?
-    - Check the Price of This for Me?
-    - Price of this?
-    - It cost?
-    - Bill
-    - Sản phẩm này giá bao nhiêu
-    - giá sản phẩm
-    - giá
-    - giá tiền sản phẩm
 
 - intent: return
   examples: |
@@ -410,6 +397,25 @@ nlu:
     - Đàn [Super](product_name) có không vậy?
     - Bạn có [Super](product_name) không?
     - Cho mình hỏi [Super](product_name) có không?
+    - How much does this [Super](product_name) cost?
+    - the price of this [Super](product_name)
+    - How Much Is [Super](product_name)?
+    - How Much Are [Super](product_name)?
+    - [Super](product_name) Cost?
+    - What Is the Price of [Super](product_name)?
+    - Price of [Super](product_name)?
+    - the Cost of [Super](product_name)?
+    - How Much [Super](product_name) Costs?
+    - Tell Me the Price of [Super](product_name)?
+    - Check the Price of [Super](product_name) for Me?
+    - Price of [Super](product_name)?
+    - [Super](product_name) cost?
+    - Bill [Super](product_name)
+    - [Super](product_name) này giá bao nhiêu
+    - giá [Super](product_name)
+    - giá sản phẩm [Super](product_name)
+    - giá tiền [Super](product_name)
+
 
 - intent: material
   examples: |
@@ -447,6 +453,7 @@ nlu:
     - [100](price_min) tới [500](price_max)
     - từ [100](price_min) tới [500](price_max)
     - từ [100](price_min) tới [500](price_max) thì có sản phẩm nào thế
+    - từ [100](price_min) tới [500](price_max) có sản phẩm nào vậy?
     - [100](price_min) tới [500](price_max) thì có sản phẩm nào ạ
     - từ [100](price_min) tới [500](price_max) thì có sản phẩm nào
     - có sản phẩm nào từ [100](price_min) tới [500](price_max)?
@@ -456,6 +463,24 @@ nlu:
     - có sản phẩm nào từ [100](price_min) đến [500](price_max) không?
     - sản phẩm trong tầm giá [100](price_min) - [500](price_max)
     - [100](price_min) đến [500](price_max)
+    - từ [100](price_min) đến [500](price_max) có sản phẩm nào thế?
+    - từ [100](price_min) đến [500](price_max) có sản phẩm nào vậy
+    - từ [100](price_min) đến [500](price_max) có sản phẩm nào?
+
+- intent: daydeli
+  examples: |
+    - bao lâu có hàng
+    - bao giờ nhận hàng
+    - mấy ngày có hàng
+    - đặt hàng bao lâu có
+  
+- intent: guarantee
+  examples: |
+    - sản phẩm có bảo hành
+    - có bảo hành hông
+    - bảo hành bao nhiêu lâu
+    - bảo hành thế nào
+    - bảo hành
 
     
 - synonym: khuyến mãi

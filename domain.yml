@@ -17,7 +17,6 @@ intents:
   - product_category
   - promotion
   - thanks
-  - product_price
   - return
   - weather
   - news
@@ -26,6 +25,8 @@ intents:
   - shopfor
   - cancel
   - sortprice
+  - daydeli
+  - guarantee
 
 entities:
   - product_name
@@ -34,21 +35,21 @@ entities:
 
 slots:
   product_detail:
-    type: text
+    type: bool
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: product_name
 
   price_min:
-    type: text
+    type: bool
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: price_min
 
   price_max:
-    type: text
+    type: bool
     influence_conversation: true
     mappings:
     - type: from_entity
@@ -115,9 +116,6 @@ responses:
   - text: "Mình rất vui ạ"
   - text: "Mình rất vui vì đã giúp được bạn."
 
-  utter_product_price:
-  - text: "Bạn có thể xem giá ở trang chi tiết sản phẩm ạ"
-
   utter_return:
   - text: "Đây là quy định của tụi mình về chính sách đổi trả ạ: http://127.0.0.1:8000/policy"
 
@@ -136,6 +134,12 @@ responses:
   - text: "Dạ chỉ khi đơn hàng ở trạng thái 'Pending' thì mình có thể hủy ạ"
   - text: "Khi ở trạng thái 'Pending' thì mới hủy được ạ"
 
+  utter_daydeli:
+  - text: "Dạ shop mình giao hàng khoảng 2 3 ngày tùy vào chỗ bạn ở ạ"
+  - text: "Dạ khoảng 2 3 ngày ạ"
+
+  utter_guarantee:
+  - text: "Bạn có thể xem chính sách ở trang Policies của website ạ"
 
 actions:
   - utter_greet
@@ -151,12 +155,13 @@ actions:
   - utter_payment_methods
   - utter_ship_fee
   - utter_thanks
-  - utter_product_price
   - utter_return
   - utter_material
   - utter_please_rephrase
   - utter_shopfor
   - utter_cancel
+  - utter_daydeli
+  - utter_guarantee
   - action_hello
   - action_weather
   - action_news

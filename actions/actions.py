@@ -121,6 +121,23 @@ class Category(Action):
         for x in myresult:
             dispatcher.utter_message(listToString(x))
 
+class HotItems(Action):
+
+    def name(self) -> Text:
+        return "action_hotitems"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        cur = mydb.cursor()
+        cur.execute("select pd.id, pd.name, sum(od.quantity) as quantity from order_details od join products pd on od.product_id = pd.id group by pd.id, pd.name order by quantity desc limit 3")
+        myresult = cur.fetchall()
+
+
+        dispatcher.utter_message("Dạ đây là top 3 sản phẩm hot của chúng mình ạ: ")
+        for x in myresult:
+            dispatcher.utter_message((x[1]))
+
 class ProductDetail(Action):
 
     def name(self) -> Text:
@@ -131,15 +148,15 @@ class ProductDetail(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         product_name = tracker.get_slot("product_detail")
         cur = mydb.cursor()
-        sql='SELECT name, price FROM products WHERE name LIKE %s'
-        args=['%'+product_name+'%']
+        sql='SELECT name, price, sale FROM products WHERE name LIKE %s'
+        args=['%'+str(product_name)+'%']
         cur.execute(sql,args)
         myresult = cur.fetchall()
 
         if len(myresult) >= 1:
             dispatcher.utter_message("Dạ chúng mình có các sản phẩm sau đây: ")
             for x in myresult:
-                dispatcher.utter_message(x[0]+ ' $' +str(x[1]))
+                dispatcher.utter_message(x[0]+', giá: $'+str(x[1])+', đang giảm: '+str(x[2])+'%')
         else:
             dispatcher.utter_message("Dạ chúng mình không có sản phẩm đó ạ :(")
 
@@ -154,16 +171,15 @@ class PriceMinMax(Action):
         pricemin = tracker.get_slot("price_min")
         pricemax = tracker.get_slot("price_max")
         cur = mydb.cursor()
-        sql='SELECT name, price FROM products WHERE price between %s and %s'
-        args1= pricemin
-        args2= pricemax
+        sql='SELECT name, price, sale FROM products WHERE price between %s and %s'
+        args1=pricemin
+        args2=pricemax
         cur.execute(sql,(args1, args2))
         myresult = cur.fetchall()
 
         if len(myresult) >= 1:
-            dispatcher.utter_message("Dạ trong khoảng giá này chúng mình có các sản phẩm sau đây: ")
+            dispatcher.utter_message("Dạ chúng mình có các sản phẩm sau đây: ")
             for x in myresult:
-                dispatcher.utter_message(x[0]+' giá: $'+str(x[1]))
+                dispatcher.utter_message(x[0]+', giá: $'+str(x[1])+', đang giảm: '+str(x[2])+'%')
         else:
-            dispatcher.utter_message("Dạ chúng mình không có sản phẩm trong khoảng giá này ạ :(")
-        
+            dispatcher.utter_message("Dạ chúng mình không có sản phẩm trong tầm giá đó ạ :(")
