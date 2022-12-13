@@ -27,6 +27,11 @@ intents:
   - sortprice
   - daydeli
   - guarantee
+  - hotitems
+  - hotsale
+  - opentime
+  - pricemax
+  - pricemin
 
 entities:
   - product_name
@@ -65,7 +70,7 @@ responses:
   - text: "Chào mừng bạn đến với GuitarStore"
 
   utter_cheer_up:
-  - text: "Có cái này cho bạn nà:"
+  - text: "Có cái này cho bạn nè:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
   - text: "Tiếc thật, mình có thể giúp gì cho bạn?"
 
@@ -79,10 +84,9 @@ responses:
 
   utter_goodbye:
   - text: "Tạm biệt ạ!"
-  - text: "Goodbye!"
 
   utter_iamabot:
-  - text: "Tui là con rô bot."
+  - text: "Mình là chatbot hỗ trợ cho GuitarStore ạ ^^"
 
   utter_help:
   - text: "Có mình giúp bạn đây."
@@ -97,11 +101,11 @@ responses:
 
   utter_shop_mail:
   - text: "Vâng đó là ourshop@gmail.com"
-  - text: "O U R S H O P @ G M A I L . C O M"
+  - text: "Dạ email tụi mình là ourshop@gmail.com"
 
   utter_register_account:
-  - text: "Link đây ạ, http://127.0.0.1:8000/register"
-  - text: "Bạn vào web shop mình sẽ thấy ạ, đây là link http://127.0.0.1:8000/register"
+  - text: "Dạ đây link đăng kí tài khoản ạ, http://127.0.0.1:8000/register"
+  - text: "Bạn vào web shop mình sẽ thấy ạ, đây là link đăng kí tài khoản http://127.0.0.1:8000/register"
 
   utter_payment_methods:
   - text: "Shop mình chỉ hỗ trợ trả tiền khi nhận hàng ạ"
@@ -109,11 +113,11 @@ responses:
 
   utter_ship_fee:
   - text: "Phí ship của tụi mình cố định là $5 ạ."
-  - text: "$5 áp dụng cho tất cả ạ"
+  - text: "$5 áp dụng cố định cho tất cả ạ"
 
   utter_thanks:
-  - text: "Hehe có gì đâu."
-  - text: "Mình rất vui ạ"
+  - text: "Mình rất hân hạnh ạ"
+  - text: "Đó là nhiệm vụ của mình ạ ^^"
   - text: "Mình rất vui vì đã giúp được bạn."
 
   utter_return:
@@ -124,22 +128,25 @@ responses:
   - text: "Dưới phần mô tả của trang chi tiết sản phẩm có đề cập đó ạ"
 
   utter_please_rephrase:
-  - text: "Xin lỗi! mình hỏng hiểu bạn nói gì ạ, bạn có thể lặp lại không ạ"
+  - text: "Xin lỗi! mình chưa hiểu bạn nói gì ạ, bạn có thể lặp lại không ạ"
 
   utter_shopfor:
   - text: "Dạ shop mình kinh doanh đàn guitar ạ"
-  - text: "Dạ shop mình bán đàn guitar của đại đội ta"
+  - text: "Dạ shop mình bán đàn guitar ạ"
 
   utter_cancel:
-  - text: "Dạ chỉ khi đơn hàng ở trạng thái 'Pending' thì mình có thể hủy ạ"
-  - text: "Khi ở trạng thái 'Pending' thì mới hủy được ạ"
+  - text: "Dạ chỉ khi đơn hàng ở trạng thái 'Pending' thì mình mới có thể hủy ạ"
+  - text: "Dạ khi đơn hàng ở trạng thái 'Pending' thì mới hủy được ạ"
 
   utter_daydeli:
   - text: "Dạ shop mình giao hàng khoảng 2 3 ngày tùy vào chỗ bạn ở ạ"
   - text: "Dạ khoảng 2 3 ngày ạ"
 
   utter_guarantee:
-  - text: "Bạn có thể xem chính sách ở trang Policies của website ạ"
+  - text: "Bạn có thể xem chính sách ở trang Policy của website ạ"
+
+  utter_opentime:
+  - text: "Dạ shop chúng mình mở cửa từ 8:00 đến 21:00 hằng ngày ạ"
 
 actions:
   - utter_greet
@@ -162,6 +169,7 @@ actions:
   - utter_cancel
   - utter_daydeli
   - utter_guarantee
+  - utter_opentime
   - action_hello
   - action_weather
   - action_news
@@ -169,6 +177,10 @@ actions:
   - action_product_name
   - action_category
   - action_sort_price
+  - action_hotitems
+  - action_hotsale
+  - action_price_min
+  - action_price_max
 
 session_config:
   session_expiration_time: 60

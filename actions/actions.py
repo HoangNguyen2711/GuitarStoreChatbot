@@ -93,7 +93,7 @@ class Coupon(Action):
         myresult = cur.fetchall()
 
         if len(myresult) >= 1:
-            dispatcher.utter_message("Chúng mình đang có các mã giảm giá sau đây ạ: ")
+            dispatcher.utter_message("Chúng mình đang có các mã giảm giá sau đây, và không áp dụng khuyến mãi chồng ạ: ")
             for x in myresult:
                 dispatcher.utter_message(x[0]+ ' -$' + str(int(x[1]))+' Ngày hết hạn: ' +str(x[2]))
         else:
@@ -134,9 +134,25 @@ class HotItems(Action):
         myresult = cur.fetchall()
 
 
-        dispatcher.utter_message("Dạ đây là top 3 sản phẩm hot của chúng mình ạ: ")
+        dispatcher.utter_message("Dạ đây là top 3 sản phẩm bán chạy nhất của chúng mình ạ: ")
         for x in myresult:
             dispatcher.utter_message((x[1]))
+
+class HotSale(Action):
+
+    def name(self) -> Text:
+        return "action_hotsale"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        cur = mydb.cursor()
+        cur.execute("select name, sale from products order by sale desc limit 5")
+        myresult = cur.fetchall()
+
+        dispatcher.utter_message("Dạ đây là top 5 sản phẩm giảm giá lớn nhất của chúng mình ạ: ")
+        for x in myresult:
+            dispatcher.utter_message((x[0])+', đang giảm: '+str(int(x[1]))+'%')
 
 class ProductDetail(Action):
 
@@ -183,3 +199,42 @@ class PriceMinMax(Action):
                 dispatcher.utter_message(x[0]+', giá: $'+str(x[1])+', đang giảm: '+str(x[2])+'%')
         else:
             dispatcher.utter_message("Dạ chúng mình không có sản phẩm trong tầm giá đó ạ :(")
+
+
+class PriceMin(Action):
+
+    def name(self) -> Text:
+        return "action_price_min"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        cur = mydb.cursor()
+        cur.execute("Select name, sale, price from products order by price asc limit 1")
+        myresult = cur.fetchall()
+ 
+        dispatcher.utter_message(
+        "Dạ đây là sản phẩm giá thấp nhất của chúng mình ạ: ")
+
+        for x in myresult:
+         dispatcher.utter_message(str(x[0])+' giá: $'+str(x[2])+', đang giảm: '+str(int(x[1]))+'%')
+
+class PriceMax(Action):
+
+    def name(self) -> Text:
+        return "action_price_max"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        cur = mydb.cursor()
+        cur.execute("Select name, sale, price from products order by price desc limit 1")
+        myresult = cur.fetchall()
+ 
+        dispatcher.utter_message(
+        "Dạ đây là sản phẩm giá cao nhất của chúng mình ạ: ")
+
+        for x in myresult:
+         dispatcher.utter_message(str(x[0])+' giá: $'+str(x[2])+', đang giảm: '+str(int(x[1]))+'%')

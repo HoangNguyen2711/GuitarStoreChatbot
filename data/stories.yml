@@ -123,3 +123,33 @@ stories:
   steps:
   - intent: sortprice
   - action: action_sort_price
+
+- story: hotitems
+  steps:
+  - intent: hotitems
+  - action: action_hotitems
+  
+- story: hotsale
+  steps:
+  - intent: hotsale
+  - action: action_hotsale
+
+- story: opentime
+  steps:
+  - intent: opentime
+  - action: utter_opentime
+
+- story: daydeli
+  steps:
+  - intent: daydeli
+  - action: utter_daydeli
+
+- story: pricemin
+  steps:
+  - intent: pricemin
+  - action: action_price_min
+
+- story: pricemax
+  steps:
+  - intent: pricemax
+  - action: action_price_max

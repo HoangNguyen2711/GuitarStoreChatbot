@@ -25,8 +25,7 @@ class ProductDetail(Action):
     cur.execute("select name, sale from products order by sale desc limit 5")
     myresult = cur.fetchall()
 
-    print(myresult)
-    # print(
-    #     "Dạ đây là top 3 sản phẩm hot của chúng mình ạ: ")
-    # for x in myresult:
-    #     print((x[1]))
+    print(
+        "Dạ đây là top 5 sản phẩm giảm giá lớn nhất của chúng mình ạ: ")
+    for x in myresult:
+        print((x[0])+', đang giảm: '+str(int(x[1]))+'%')

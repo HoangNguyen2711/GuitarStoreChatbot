@@ -346,6 +346,13 @@ nlu:
     - trả hàng
     - muốn trả lại hàng
     - lấy lại tiền
+    - làm sao trả hàng
+    - tui muốn trả hàng
+    - trả hàng
+    - trả lại hàng
+    - đền tiền
+    - trả tiền cho tui
+    - trả tiền
 
 - intent: weather
   examples: |
@@ -373,6 +380,7 @@ nlu:
     - Discovery
     - tin tức
     - có gì mới không
+    - có gì mới
 
 - intent: product_detail
   examples: |
@@ -386,6 +394,26 @@ nlu:
     - [Mitchell](product_name)?
     - [nothing](product_name)?
     - [abc](product_name)?
+    - [EZB](product_name)?
+    - [Atist](product_name)?
+    - [Ignition](product_name)?
+    - [Nite-V](product_name)?
+    - [abc](product_name)?
+    - [Super](product_name) giá bao nhiêu?
+    - [Legator](product_name) giá bao nhiêu?
+    - [Alvarez](product_name) giá bao nhiêu?
+    - [Kramer](product_name) giá bao nhiêu?
+    - [G&L CLF](product_name) giá bao nhiêu?
+    - [Hofner](product_name) giá bao nhiêu?
+    - [Gold Tone](product_name) giá bao nhiêu vậy?
+    - [Mitchell](product_name) giá nhiêu?
+    - Cây [nothing](product_name) giá nhiêu?
+    - Cây [abc](product_name) giá sao?
+    - [EZB](product_name) giá?
+    - Giá [Atist](product_name)?
+    - Giá [Ignition](product_name) sao?
+    - Có [Nite-V](product_name) không?
+    - Shop có cây [abc](product_name) không?
     - Shop có đàn [abc](product_name) không?
     - Có đàn [abcxyz](product_name) không?
     - Đàn [abcxyz](product_name)?
@@ -433,6 +461,8 @@ nlu:
     - shop bán cái gì
     - shop bán gì
     - shop kinh doanh gì vậy
+    - shop bạn bán gì
+    - shop kinh doanh gì đấy
 
 - intent: cancel
   examples: |
@@ -441,6 +471,12 @@ nlu:
     - hủy 
     - cancel
     - cancel đơn hàng
+    - cách hủy đơn hàng
+    - sao mình không thấy nút cancel ạ
+    - nút cancel không hiện nữa
+    - không bấm được nút cancel
+    - nút cancel bị gì vậy
+    - nút cancel
 
 - intent: sortprice
   examples: |
@@ -463,6 +499,11 @@ nlu:
     - từ [100](price_min) đến [500](price_max) có sản phẩm nào thế?
     - từ [100](price_min) đến [500](price_max) có sản phẩm nào vậy
     - từ [100](price_min) đến [500](price_max) có sản phẩm nào?
+    - [100](price_min) đến [500](price_max) có cây nào?
+    - từ [100](price_min) đến [500](price_max) có đàn nào?
+    - [100](price_min) đến [500](price_max) có cây nào không
+    - [100](price_min) đến [500](price_max) có cây nào?
+    - từ [100](price_min) đến [500](price_max) có đàn nào vậy?
 
 - intent: daydeli
   examples: |
@@ -471,6 +512,11 @@ nlu:
     - mấy ngày có hàng
     - đặt hàng bao lâu có
     - giao hàng trong bao lâu
+    - đặt bao lâu có hàng
+    - bao lâu nhận được hàng
+    - đặt mấy ngày có hàng
+    - bao thì nhận được hàng
+    - bao lâu nhận được đàn
   
 - intent: guarantee
   examples: |
@@ -479,6 +525,82 @@ nlu:
     - bảo hành bao nhiêu lâu
     - bảo hành thế nào
     - bảo hành
+    - bảo hành bao lâu
+    - bảo hành sao
+
+- intent: hotitems
+  examples: |
+    - shop có sản phẩm nào hot vậy ạ
+    - sản phẩm hot
+    - bạn có sản phẩm nào hot
+    - sản phẩm nóng
+    - sản phẩm được mua nhiều
+    - mua nhiều
+    - hot
+    - tốt
+    - sản phẩm nào tốt vậy
+    - sản phẩm bán chạy nhất
+    - bán chạy
+    - best seller
+    - cho mình xin best seller
+    - sản phẩm nào là best seller vậy
+    - cây nào best seller
+    - cây nào bán chạy nhất
+    - đàn nào bán chạy nhất
+    - đàn nào best seller
+    - sản phẩm best seller
+
+- intent: hotsale
+  examples: |
+    - sản phẩm nào giảm giá mạnh vậy
+    - giảm giá cao nhất
+    - giảm giá nhiều nhất
+    - sale lớn nhất
+    - sale nhiều nhất
+    - sale cao nhất
+    - khuyến mãi nhiều nhất
+    - khuyến mãi to nhất
+    - giảm giá sâu nhất
+    - khuyến mãi sâu nhất
+    - khuyến mãi lớn nhất
+
+- intent: opentime
+  examples: |
+    - thời gian mở cửa
+    - giờ mở cửa
+    - mấy giờ mở cửa
+    - mấy giờ 
+    - shop mở tới mấy giờ
+    - chừng nào đóng cửa
+    - hôm nay có mở cửa không
+    - shop mở từ mấy giờ tới mấy giờ
+    - giờ làm việc của shop
+
+- intent: pricemax
+  examples: |
+    - sản phẩm mắc nhất
+    - sản phẩm đắt nhất
+    - giá cao nhất
+    - giá mắc nhất
+    - giá lớn nhất
+    - giá max
+    - cao nhất
+    - đàn giá cao nhất
+    - đàn nào mắc nhất
+    - đàn mắc nhất
+
+- intent: pricemin
+  examples: |
+    - sản phẩm rẻ nhất
+    - sản phẩm thấp nahát
+    - giá thấp nhất
+    - giá bé nhất
+    - giá ít nhất
+    - giá min
+    - thấp nhất
+    - đàn giá thấp nhất
+    - đàn nào rẻ nhất
+    - đàn rẻ nhất
 
     
 - synonym: khuyến mãi
