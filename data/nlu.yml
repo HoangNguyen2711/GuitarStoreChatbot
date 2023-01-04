@@ -353,6 +353,11 @@ nlu:
     - đền tiền
     - trả tiền cho tui
     - trả tiền
+    - đổi trả trong bao lâu
+    - đổi trả hàng
+    - bao nhiêu ngày được đổi trả
+    - đổi trả hàng thế nào
+    - mấy ngày còn đổi trả được
 
 - intent: weather
   examples: |
